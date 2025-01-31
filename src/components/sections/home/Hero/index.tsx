@@ -24,7 +24,7 @@ const Hero = () => {
   }, [updateDimensions]); // Added updateDimensions to the dependency array
 
   return (
-    <div className="w-full relative">
+    <section className="w-full relative">
       <Image
         ref={imageRef}
         alt={"background for Tribu"}
@@ -53,12 +53,12 @@ const Hero = () => {
           <p className="text-white font-light text-xs md:text-lg">
             Experience luxury at its finest with our beautiful hotel facilities
           </p>
-          <div className="mt-10">
+          <div className="mt-10 hidden md:block">
             <BookingForm />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
