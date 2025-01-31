@@ -19,7 +19,9 @@ const StyledFonts = ({
     lineHeight: "1.5rem",
     letterSpacing: "0.00938em",
   };
-  return <span style={{ ...style }}>{text}</span>;
+  return (
+    <span style={{ ...style }} dangerouslySetInnerHTML={{ __html: text }} />
+  );
 };
 
 export default StyledFonts;
