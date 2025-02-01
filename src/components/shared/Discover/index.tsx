@@ -3,6 +3,7 @@ import { MapPin } from "lucide-react";
 import hotel from "../../../../public/images/freepik__enhance__66205.png";
 import map from "../../../../public/images/map.png";
 import StyledFonts from "@/components/shared/StyledFonts";
+import Link from "next/link";
 
 export default function Discover() {
   return (
@@ -54,9 +55,11 @@ export default function Discover() {
                 University Enugu-Enugu State Nigeria.
               </p>
             </div>
-            <button className="w-full bg-[#2A332E] text-white py-4 px-8 rounded hover:bg-[#364339] transition-colors">
-              BOOK NOW
-            </button>
+            <Link href="/rooms/tribu-hotel">
+              <button className="w-full mt-8 bg-[#2A332E] text-white py-4 px-8 rounded hover:bg-[#364339] transition-colors">
+                BOOK NOW
+              </button>
+            </Link>
           </div>
         </div>
       </section>

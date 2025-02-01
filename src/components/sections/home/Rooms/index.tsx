@@ -76,9 +76,12 @@ const Rooms = () => {
                     </small>
                   </article>
 
-                  <button className="text-white flex-1 w-full py-3 text-sm bg-[#343935]">
+                  <Link
+                    href="/rooms/tribu-deluxe"
+                    className="text-white text-center flex-1 w-full py-3 text-sm bg-[#343935]"
+                  >
                     BOOK NOW
-                  </button>
+                  </Link>
                 </div>
               </div>
             );
