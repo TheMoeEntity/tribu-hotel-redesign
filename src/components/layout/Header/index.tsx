@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         {/* Desktop & Tablet Navigation (Centered from md onwards) */}
         <nav className="hidden md:flex items-center justify-center space-x-6 w-full">
           <Link href="/">Home</Link>
-          <Link href="/">Rooms</Link>
+          <Link href="/rooms">Rooms</Link>
           <Link href="#">About</Link>
           <span className="hidden md:flex justify-center items-center w-16 h-16 lg:w-20 lg:h-20">
             <Image
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           <Link href="/" className="block">
             Home
           </Link>
-          <Link href="/" className="block">
+          <Link href="/rooms" className="block">
             Rooms
           </Link>
           <Link href="#" className="block">
