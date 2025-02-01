@@ -35,18 +35,16 @@ const About = () => {
               />
             </h2>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              veritatis magnam explicabo esse voluptatibus expedita impedit
-              earum id error dolore.
+              Whether you&#39;re visiting Enugu for work, play, or something in
+              between, Tribu Hotel is a stylish base for your urban adventures
+              and one of the finest hotel around Enugu.
             </p>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit hic soluta voluptas officiis exercitationem culpa?
-              Aspernatur autem expedita accusamus labore voluptatibus quae
-              numquam explicabo, totam dolores atque repudiandae ad aut, alias
-              earum est rem laboriosam neque! Earum adipisci est beatae modi at
-              explicabo nisi dolorem cupiditate sed vero illum, fuga, culpa ad
-              ut velit? Rem.
+              many rooms located in Enugu city not far from Akamu Ibiam
+              International Airport Quick access to major government
+              establishment and city commercial hubs including Enugu State
+              Government House(Lion House) , WHO (UNICEF) Federal Secretariat,
+              SPAR and ShopRite
             </p>
           </article>
         </div>

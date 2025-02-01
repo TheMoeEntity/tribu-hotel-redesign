@@ -12,15 +12,17 @@ const Header: React.FC = () => {
     <header className="py-4 z-50 text-white absolute w-full left-0 top-0">
       <div className="flex items-center justify-between px-4 md:px-8">
         {/* Logo - Always Centered on md+ Screens */}
-        <span className="flex justify-center items-center w-10 h-10 lg:w-20 lg:h-20 md:hidden">
-          <Image
-            alt="Tribu logo"
-            src={tribuLogo}
-            priority={true}
-            quality={100}
-            className="object-cover w-full h-auto"
-          />
-        </span>
+        <Link href="/">
+          <span className="flex justify-center items-center w-10 h-10 lg:w-20 lg:h-20 md:hidden">
+            <Image
+              alt="Tribu logo"
+              src={tribuLogo}
+              priority={true}
+              quality={100}
+              className="object-cover w-full h-auto"
+            />
+          </span>
+        </Link>
 
         {/* Desktop & Tablet Navigation (Centered from md onwards) */}
         <nav className="hidden md:flex items-center justify-center space-x-6 w-full">

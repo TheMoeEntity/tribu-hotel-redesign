@@ -34,25 +34,23 @@ const About: React.FC = () => {
               />
             </h2>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              veritatis magnam explicabo esse voluptatibus expedita impedit
-              earum id error dolore.
+              Whether you&#39;re visiting Enugu for work, play, or something in
+              between, Tribu Hotel is a stylish base for your urban adventures
+              and one of the finest hotel around Enugu.
             </p>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit hic soluta voluptas officiis exercitationem culpa?
-              Aspernatur autem expedita accusamus labore voluptatibus quae
-              numquam explicabo, totam dolores atque repudiandae ad aut, alias
-              earum est rem laboriosam neque! Earum adipisci est beatae modi at
-              explicabo nisi dolorem cupiditate sed vero illum, fuga, culpa ad
-              ut velit? Rem.
+              many rooms located in Enugu city not far from Akamu Ibiam
+              International Airport Quick access to major government
+              establishment and city commercial hubs including Enugu State
+              Government House(Lion House) , WHO (UNICEF) Federal Secretariat,
+              SPAR and ShopRite
             </p>
             <p className="text-gray-600">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-              laborum assumenda aperiam ipsum iure alias? Dicta itaque magnam
-              fugit deserunt harum animi tempore omnis minima, reprehenderit
-              quae excepturi vitae consectetur quas eos repudiandae quo sapiente
-              aspernatur praesentium fugiat molestiae voluptas?
+              Inside the hotel, you&#39;ll find everything you need for a
+              memorable stay. The decor, with high ceilings, modern furnishings,
+              and beautiful wood works. The guest rooms are particularly
+              appealing, complete with luxurious finishes, tasteful and elegant,
+              marble bathrooms, and inspiring city views.
             </p>
           </article>
         </div>
