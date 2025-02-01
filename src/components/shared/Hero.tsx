@@ -9,7 +9,9 @@ const Hero: React.FC<{
   bg: StaticImageData;
   caption: string;
   page: string;
-}> = ({ bg, caption, page }) => {
+  slug?: boolean;
+  subPage?: string;
+}> = ({ bg, caption, page, slug = false, subPage = "" }) => {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const imageRef = useRef<HTMLImageElement>(null);
   const [loading, setLoading] = useState(true);
@@ -68,6 +70,12 @@ const Hero: React.FC<{
               <div className="flex justify-center text-white items-center gap-5">
                 <span className="font-light">Home</span> <ChevronRight />{" "}
                 <span className="font-medium">{page}</span>
+                {slug && (
+                  <React.Fragment>
+                    <ChevronRight />{" "}
+                    <span className="font-medium">{subPage}</span>
+                  </React.Fragment>
+                )}
               </div>
               <h1 className="text-4xl mt-5 md:mt-0 font-[Playfair Display] relative md:text-5xl lg:text-6xl xl:text-9xl leading-[1.1!important] text-white font-bold">
                 <span className="">
