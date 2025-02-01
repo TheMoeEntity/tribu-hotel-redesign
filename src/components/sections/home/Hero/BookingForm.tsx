@@ -9,7 +9,7 @@ export default function BookingForm() {
 
   return (
     <div className="w-full z-[200] max-w-7xl mx-auto px-4">
-      <div className="bg-white rounded-lg shadow-lg p-6 grid grid-cols-1 lg:grid-cols-5 gap-6 items-end">
+      <div className="bg-white shadow-lg p-4 grid grid-cols-1 lg:grid-cols-5 gap-6 items-end">
         {/* Check In Date */}
         <div className="relative">
           <label className="block text-left text-sm font-medium text-gray-500 mb-2">
@@ -84,7 +84,7 @@ export default function BookingForm() {
 
         {/* Book Now Button */}
         <button
-          className="w-full bg-[#3C4A3E] hover:bg-[#2C382E] text-white py-3 md:py-7 px-4 rounded-lg transition-colors duration-200 font-medium"
+          className="w-full bg-[#3C4A3E] hover:bg-[#2C382E] text-white py-3 md:py-7 px-4 transition-colors duration-200 font-medium"
           onClick={() => {
             // Handle booking logic here
             console.log({

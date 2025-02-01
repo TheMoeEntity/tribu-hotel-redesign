@@ -1,5 +1,6 @@
 import About from "@/components/sections/home/About";
 import Amenities from "@/components/sections/home/Amenities";
+import Discover from "@/components/sections/home/Discover";
 import Hero from "@/components/sections/home/Hero";
 import Rooms from "@/components/sections/home/Rooms";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <Rooms />
       <Amenities />
+      <Discover />
     </main>
   );
 }
