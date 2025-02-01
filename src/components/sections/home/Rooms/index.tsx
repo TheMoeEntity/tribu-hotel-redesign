@@ -10,7 +10,7 @@ const Rooms = () => {
   return (
     <section className="px-5 py-20 text-white bg-[#343935] md:px-20 ">
       <div className="container flex flex-col gap-10">
-        <div className="flex flex-col md:flex-row w-full items-center justify-between">
+        <div className="flex flex-col space-y-10 md:flex-row w-full items-center justify-between">
           <article className="flex flex-1 flex-col gap-5">
             <h2 className="text-[#B39968] font-light tracking-[10px] text-2xl">
               ROOMS & SUITES
@@ -25,8 +25,8 @@ const Rooms = () => {
           </article>
           <article className="flex flex-1 flex-col gap-8">
             <p className="text-lg font-light text-gray-300">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
-              beatae nisi earum fugiat vitae, porro est!
+              Choose from our luxurious room types to fit your traveling style
+              and comfort needs. All available for booking right away.
             </p>
             <Link href="/rooms" className="underline">
               View all rooms

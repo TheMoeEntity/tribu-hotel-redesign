@@ -66,9 +66,9 @@ const Amenities = () => {
                           />
                         </h2>
                         <span className="flex text-[#CACBCB]">
-                          Lorem ipsum dolor sit, amet consectetur adipisicing
-                          elit. Adipisci placeat, magni assumenda libero quasi
-                          quis.
+                          The Executive Lounge located at the ground floor
+                          provides an exclusive where you can investigate, relax
+                          and recharge.
                         </span>
                         <span className="text-[#C5A670] underline font-medium">
                           Read more
