@@ -128,7 +128,7 @@ export default function ContactForm() {
               id="agreed"
               checked={agreed}
               onChange={(checked) => setAgreed(checked.target.checked)}
-              className="mt-1 cursor-pointer"
+              className="mt-1 p-5 cursor-pointer"
               name=""
             />
             <span className="text-xs text-gray-500">
