@@ -62,7 +62,7 @@ const Hero = () => {
                 type: "spring",
               }}
             >
-              <h1 className="text-3xl font-[Playfair Display] relative md:text-4xl lg:text-6xl xl:text-9xl leading-[1.1!important] text-white font-bold">
+              <h1 className="text-3xl font-[Playfair Display] relative md:text-5xl lg:text-6xl xl:text-9xl leading-[1.1!important] text-white font-bold">
                 <span className="">
                   <StyledFonts
                     fontFamily="Playfair Display"
@@ -78,11 +78,11 @@ const Hero = () => {
                   />
                 </span>
               </h1>
-              <p className="text-white p-5 md:p-0 font-light text-xs md:text-lg">
+              <p className="text-white p-5 lg:p-0 font-light text-xs md:text-lg">
                 Experience luxury at its finest with our beautiful hotel
                 facilities
               </p>
-              <div className="mt-10 hidden md:block">
+              <div className="mt-10 hidden lg:block">
                 <BookingForm />
               </div>
             </motion.div>

@@ -8,11 +8,11 @@ import BookingForm from "../Hero/BookingForm";
 const About = () => {
   return (
     <>
-      <div className="mt-10 md:hidden">
+      <div className="mt-10 lg:hidden">
         <BookingForm />
       </div>
-      <section className="px-5 py-20 container md:p-16 ">
-        <div className="flex flex-col md:flex-row gap-10 flex-wrap">
+      <section className="px-5 py-20 container md:py-16 ">
+        <div className="flex flex-col lg:items-center lg:flex-row gap-10 space-y-4">
           <aside className="flex-1">
             <Image
               alt={"Image of tree"}

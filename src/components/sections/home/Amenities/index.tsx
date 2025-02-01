@@ -31,7 +31,7 @@ const Amenities = () => {
       </section>
       <section className="px-5 text-white bg-[#343935] py-20 md:px-20 ">
         <div className="container w-full justify-center flex flex-col gap-10">
-          <h2 className="text-4xl text-center md:text-7xl">
+          <h2 className="text-3xl text-center md:text-7xl">
             <StyledFonts
               className="tracking-[14px!important] leading-[1.3]"
               fontFamily="Playfair Display"
