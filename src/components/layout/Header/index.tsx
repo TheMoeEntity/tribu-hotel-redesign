@@ -36,7 +36,7 @@ const Header: React.FC = () => {
               className="object-cover w-full h-auto"
             />
           </span>
-          <Link href="#">Gallery</Link>
+          <Link href="/gallery">Gallery</Link>
           <Link href="#">Contact</Link>
           <Link href="#">EN</Link>
         </nav>
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
           <Link href="/about" className="block">
             About
           </Link>
-          <Link href="#" className="block">
+          <Link href="/gallery" className="block">
             Gallery
           </Link>
           <Link href="#" className="block">
