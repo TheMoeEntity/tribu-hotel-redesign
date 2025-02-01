@@ -22,8 +22,23 @@ const SingleRoom = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
           asperiores?
         </p>
-        <div className="flex flex-col md:flex-row">
-          <div className="flex-1"></div>
+        <div className="flex flex-col md:space-x-24 space-y-10 md:flex-row">
+          <div className="space-y-10">
+            <h2 className="text-3xl text-left font-medium">Room Information</h2>
+            <ul className="list-disc text-gray-500 ml-5 space-y-3">
+              <li>Max: 2</li>
+              <li>A King bed</li>
+              <li>Air Conditioning</li>
+              <li>Smart TV</li>
+              <li>En Suite with Shower over bath</li>
+              <li>Tea and Coffee facilities</li>
+            </ul>
+            <ul className="list-disc text-gray-500 ml-5 space-y-3">
+              <li>Guest fridge</li>
+              <li>Large work desk</li>
+              <li>Complimentary unlimited Wi-Fi</li>
+            </ul>
+          </div>
           <ReservationForm />
         </div>
       </section>

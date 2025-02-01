@@ -30,17 +30,17 @@ export default function ReservationForm() {
   };
 
   return (
-    <div className="mx-auto flex-grow-[1.2] p-8 md:p-16 border-black border">
-      <div className="flex justify-between items-center">
+    <div className="flex-1 w-full p-8 md:p-16 border-black border">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
         {" "}
         <h2 className="text-4xl font-semibold mb-6">
           <StyledFonts
             fontFamily="Playfair Display"
             text="Reservation Form"
-            color="inherit"
+            color="black"
           />
         </h2>
-        <p className="text-2xl text-[#C4A484] mb-4">
+        <p className="text-3xl text-[#C4A484] mb-4">
           <StyledFonts
             fontFamily="Playfair Display"
             text="N95,000/night"
