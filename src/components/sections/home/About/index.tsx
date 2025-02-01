@@ -12,7 +12,7 @@ const About = () => {
         <BookingForm />
       </div>
       <section className="px-5 py-20 container md:py-16 ">
-        <div className="flex flex-col lg:items-center lg:flex-row gap-10 space-y-4">
+        <div className="flex flex-col lg:items-start lg:flex-row gap-10 space-y-4">
           <aside className="flex-1">
             <Image
               alt={"Image of tree"}

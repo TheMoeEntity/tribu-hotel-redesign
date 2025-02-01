@@ -10,7 +10,7 @@ const Amenities = () => {
   return (
     <>
       <section className="px-5 py-20 md:px-20 ">
-        <div className="container flex flex-col md:flex-row gap-10">
+        <div className="container flex flex-col gap-y-24 lg:flex-row gap-10">
           <article className="flex flex-col gap-7">
             <div className="bg-[#C19B6C] w-[1px] h-20"></div>
             <h2 className="text-[#B39968] font-light tracking-[10px] text-2xl">

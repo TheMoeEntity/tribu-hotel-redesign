@@ -9,7 +9,7 @@ export default function BookingForm() {
 
   return (
     <div className="w-full z-[200] max-w-7xl mx-auto px-4">
-      <div className="bg-white shadow-lg p-4 grid grid-cols-1 lg:grid-cols-5 gap-6 items-end">
+      <div className="bg-white shadow-lg p-4 md:px-12 md:py-12 lg:px-5 lg:py-5 grid grid-cols-1 lg:grid-cols-5 gap-6 items-end">
         {/* Check In Date */}
         <div className="relative">
           <label className="block text-left text-sm font-medium text-gray-500 mb-2">
