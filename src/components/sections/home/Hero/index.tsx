@@ -32,7 +32,7 @@ const Hero = () => {
         priority={true}
         quality={100}
         className="object-cover w-full h-auto"
-        onLoadingComplete={updateDimensions}
+        onLoad={updateDimensions}
       />
       <div
         className="absolute bg-[rgba(0,0,0,0.5)]"

@@ -49,7 +49,7 @@ const Rooms = () => {
                   />
                 </div>
 
-                <div className="px-5 py-7 flex md:flex-row flex-col gap-5 md:items-end">
+                <div className="px-5 py-7 flex xl:flex-row flex-col gap-5 xl:items-end">
                   <article className="flex-1 flex flex-col gap-3">
                     <h2 className="mb-3 whitespace-nowrap font-bold text-left text-3xl text-gray-700">
                       <StyledFonts
