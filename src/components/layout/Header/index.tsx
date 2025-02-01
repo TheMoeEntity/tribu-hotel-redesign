@@ -27,15 +27,17 @@ const Header: React.FC = () => {
           <Link href="/">Home</Link>
           <Link href="/rooms">Rooms</Link>
           <Link href="/about">About</Link>
-          <span className="hidden md:flex justify-center items-center w-16 h-16 lg:w-20 lg:h-20">
-            <Image
-              alt="Tribu logo"
-              src={tribuLogo}
-              priority={true}
-              quality={100}
-              className="object-cover w-full h-auto"
-            />
-          </span>
+          <Link href="/">
+            <span className="hidden md:flex justify-center items-center w-16 h-16 lg:w-20 lg:h-20">
+              <Image
+                alt="Tribu logo"
+                src={tribuLogo}
+                priority={true}
+                quality={100}
+                className="object-cover w-full h-auto"
+              />
+            </span>
+          </Link>
           <Link href="/gallery">Gallery</Link>
           <Link href="/contact">Contact</Link>
           <Link href="#">EN</Link>
@@ -52,7 +54,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Navigation (Only on Small Screens) */}
       {isOpen && (
-        <nav className="md:hidden mt-5 bg-white text-black shadow-md w-full text-center py-4 space-y-4">
+        <nav className="md:hidden mt-2 z-50 bg-white/95 text-[#b39476] shadow-md w-full text-center py-4 space-y-4">
           <Link href="/" className="block">
             Home
           </Link>
