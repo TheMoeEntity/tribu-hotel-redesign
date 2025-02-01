@@ -4,6 +4,8 @@ import bg from "../../../public/images/about-bg.jpg";
 import bg1 from "../../../public/images/about-tribu.jpg";
 import Image from "next/image";
 import StyledFonts from "@/components/shared/StyledFonts";
+import Discover from "@/components/shared/Discover";
+import FAQSection from "./FAQSection";
 
 const About: React.FC = () => {
   return (
@@ -55,6 +57,44 @@ const About: React.FC = () => {
           </article>
         </div>
       </section>
+      <section className="grid mx-auto place-items-center grid-cols-1 bg-[#343935] py-20 px-5 text-white w-full justify-center md:grid-cols-3 gap-4">
+        <div className="flex flex-col gap-3">
+          <h1 className="text-4xl md:text-7xl text-center">
+            <StyledFonts
+              fontFamily="Playfair Display"
+              text="35"
+              color="#C5A670"
+            />
+          </h1>
+          <span className="text-2xl lg:text-4xl">Rooms</span>
+        </div>
+        <div className="flex flex-col gap-3">
+          <h1 className="text-4xl md:text-7xl text-center">
+            <StyledFonts
+              fontFamily="Playfair Display"
+              text="50+"
+              color="#C5A670"
+            />
+          </h1>
+          <span className="text-2xl lg:text-4xl text-center">
+            Staff at your Service
+          </span>
+        </div>
+        <div className="flex flex-col gap-3">
+          <h1 className="text-4xl md:text-7xl text-center">
+            <StyledFonts
+              fontFamily="Playfair Display"
+              text="6"
+              color="#C5A670"
+            />
+          </h1>
+          <span className="text-2xl lg:text-4xl">Facilities</span>
+        </div>
+      </section>
+      <section className="px-5 py-10 xl:py-20 container">
+        <FAQSection />
+      </section>
+      <Discover />
     </main>
   );
 };

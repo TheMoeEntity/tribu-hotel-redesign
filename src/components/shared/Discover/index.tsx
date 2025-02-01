@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MapPin } from "lucide-react";
-import hotel from "../../../../../public/images/freepik__enhance__66205.png";
-import map from "../../../../../public/images/map.png";
+import hotel from "../../../../public/images/freepik__enhance__66205.png";
+import map from "../../../../public/images/map.png";
 import StyledFonts from "@/components/shared/StyledFonts";
 
 export default function Discover() {
