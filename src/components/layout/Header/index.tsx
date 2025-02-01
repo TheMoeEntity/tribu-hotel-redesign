@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex items-center justify-center space-x-6 w-full">
           <Link href="/">Home</Link>
           <Link href="/rooms">Rooms</Link>
-          <Link href="#">About</Link>
+          <Link href="/about">About</Link>
           <span className="hidden md:flex justify-center items-center w-16 h-16 lg:w-20 lg:h-20">
             <Image
               alt="Tribu logo"
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
           <Link href="/rooms" className="block">
             Rooms
           </Link>
-          <Link href="#" className="block">
+          <Link href="/about" className="block">
             About
           </Link>
           <Link href="#" className="block">

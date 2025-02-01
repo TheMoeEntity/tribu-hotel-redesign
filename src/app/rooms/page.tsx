@@ -11,7 +11,7 @@ const Rooms: React.FC = () => {
   return (
     <main className="flex flex-col min-h-screen">
       <Hero bg={bg} page="Rooms" caption="Rooms & Suites" />
-      <section className="px-5 py-10 md:py-20 container">
+      <section className="px-5 py-10 xl:py-20 container">
         <p className="text-gray-600 text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse in modi
           dolor blanditiis et magni, vel consequatur. Illo dolorum beatae eius
