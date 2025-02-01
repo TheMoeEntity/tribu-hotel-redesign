@@ -84,7 +84,7 @@ export default function BookingForm() {
 
         {/* Book Now Button */}
         <button
-          className="w-full bg-[#3C4A3E] hover:bg-[#2C382E] text-white py-7 px-4 rounded-lg transition-colors duration-200 font-medium"
+          className="w-full bg-[#3C4A3E] hover:bg-[#2C382E] text-white py-3 md:py-7 px-4 rounded-lg transition-colors duration-200 font-medium"
           onClick={() => {
             // Handle booking logic here
             console.log({

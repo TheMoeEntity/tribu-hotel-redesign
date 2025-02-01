@@ -30,7 +30,7 @@ const Amenity = ({ icon, title }: AmenityProps) => (
         strokeWidth: 1.5,
       })}
     </div>
-    <h3 className="text-[#4A4A4A] text-sm font-medium leading-tight max-w-[120px]">
+    <h3 className="text-[#4A4A4A] text-xs font-medium leading-tight max-w-[120px]">
       {title}
     </h3>
   </div>

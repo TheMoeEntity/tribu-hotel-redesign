@@ -33,10 +33,13 @@ const Rooms = () => {
             </Link>
           </article>
         </div>
-        <div className="mt-10 w-full grid mb-20 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 w-full grid mb-20 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {[flower, flower2, flower3].map((x, i) => {
             return (
-              <div key={i} className="overflow-hidden bg-white shadow">
+              <div
+                key={i}
+                className="overflow-hidden max-w-screen-sm bg-white shadow"
+              >
                 <div className="relative">
                   <div className="absolute top-3 right-3 py-2 px-3 text-sm rounded-lg bg-[var(--greencal-primary)] text-white"></div>
                   <div className="absolute bottom-0 left-3 py-1 px-3 text-sm rounded-tl-lg rounded-tr-lg bg-[var(--greencal-main)] text-white"></div>

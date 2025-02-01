@@ -4,9 +4,11 @@ const StyledFonts = ({
   text,
   fontSize = "inherit",
   color,
+  className = "",
   fontFamily,
 }: {
   text: string;
+  className?: string;
   fontSize?: string;
   color: string;
   fontFamily: string;
@@ -20,7 +22,11 @@ const StyledFonts = ({
     letterSpacing: "0.00938em",
   };
   return (
-    <span style={{ ...style }} dangerouslySetInnerHTML={{ __html: text }} />
+    <span
+      className={`${className}`}
+      style={{ ...style }}
+      dangerouslySetInnerHTML={{ __html: text }}
+    />
   );
 };
 
