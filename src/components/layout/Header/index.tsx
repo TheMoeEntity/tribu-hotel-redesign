@@ -37,7 +37,7 @@ const Header: React.FC = () => {
             />
           </span>
           <Link href="/gallery">Gallery</Link>
-          <Link href="#">Contact</Link>
+          <Link href="/contact">Contact</Link>
           <Link href="#">EN</Link>
         </nav>
 
@@ -65,7 +65,7 @@ const Header: React.FC = () => {
           <Link href="/gallery" className="block">
             Gallery
           </Link>
-          <Link href="#" className="block">
+          <Link href="/contact" className="block">
             Contact
           </Link>
           <Link href="#" className="block">
