@@ -5,11 +5,13 @@ import Footer from "./Footer";
 import { ChevronUpIcon } from "lucide-react";
 import { Toaster } from "react-hot-toast";
 import { useScrollTop } from "@/hooks";
+import Loader from "../shared/Loader";
 
 const AppLayout = ({ children }: { children: ReactNode }) => {
   const { scrollBtn, scrollTop } = useScrollTop();
   return (
     <section className="bg-gray-100 mx-auto w-full">
+      <Loader />
       <Toaster position="top-center" />
       <Header />
       {children}

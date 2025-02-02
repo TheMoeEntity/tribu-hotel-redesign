@@ -3,26 +3,26 @@ import React from "react";
 import bg from "../../../../public/images/room3.jpg";
 import ReservationForm from "@/components/sections/rooms/ReservationForm";
 import AmenitiesGrid from "@/components/sections/rooms/Amenities";
+import { rooms } from "@/lib/constants";
+import { notFound } from "next/navigation";
 
-const SingleRoom = () => {
+const SingleRoom = async ({ params }: { params: { slug: string } }) => {
+  const { slug } = params;
+  const response = rooms.find((x) => x.slug == slug);
+  if (!response) {
+    notFound();
+  }
   return (
     <main className="flex flex-col pb-10 space-y-7 min-h-screen">
       <Hero
-        bg={bg}
+        bg={response.image}
         page="rooms"
-        subPage="Tribu Deluxe"
+        subPage={response.name}
         slug={true}
-        caption="Tribu Deluxe"
+        caption={response.name}
       />
       <section className="px-5 text-gray-600 space-y-10 py-5 container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error
-          beatae nisi placeat sed delectus optio nihil autem possimus ut
-          dolorum, voluptatibus voluptatum nesciunt.
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-          asperiores?
-        </p>
+        <p>{response.description}</p>
         <div className="flex flex-col gap-12 xl:gap-40 md:flex-row">
           <div className="space-y-10">
             <h2 className="text-3xl text-left font-medium">Room Information</h2>

@@ -25,6 +25,10 @@ body {
   color: black;
   background: inherit;
 }
+.each-slide {
+  padding: 0 10px;
+  /* Adjust padding to create gap between slides */
+}
 .scrollTop {
   width: 40px;
   height: 40px;

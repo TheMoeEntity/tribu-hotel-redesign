@@ -1,6 +1,26 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+export function useIs404() {
+  const pathname = usePathname();
+  const [is404, setIs404] = useState(false);
+
+  useEffect(() => {
+    const checkRouteExists = async () => {
+      try {
+        const res = await fetch(pathname);
+        setIs404(res.status === 404);
+      } catch (error) {
+        setIs404(true);
+      }
+    };
+
+    checkRouteExists();
+  }, [pathname]);
+
+  return is404;
+}
 
 export const useScrollTop = () => {
   const pathname = usePathname();

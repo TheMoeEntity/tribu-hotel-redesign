@@ -5,6 +5,7 @@ import flower from "../../../../../public/images/room.jpg";
 import flower2 from "../../../../../public/images/room2.jpg";
 import flower3 from "../../../../../public/images/room3.jpg";
 import Image from "next/image";
+import RoomSlider from "./RoomSlider";
 
 const Rooms = () => {
   return (
@@ -33,7 +34,9 @@ const Rooms = () => {
             </Link>
           </article>
         </div>
-        <div className="mt-10 w-full grid mb-20 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+        <RoomSlider />
+        {/* <div className="mt-10 w-full grid mb-20 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {[flower, flower2, flower3].map((x, i) => {
             return (
               <div
@@ -46,8 +49,6 @@ const Rooms = () => {
                   <Image
                     alt="Tribu Hotel"
                     src={x}
-                    width={300}
-                    height={200}
                     className="object-cover w-full h-auto"
                   />
                 </div>
@@ -86,7 +87,7 @@ const Rooms = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </section>
   );
