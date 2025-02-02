@@ -29,7 +29,10 @@ const Rooms: React.FC = () => {
         <div className="mt-20 w-full grid mb-20 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {rooms.map((x, i) => {
             return (
-              <div key={i} className="overflow-hidden mx-2 max-w-screen-sm">
+              <div
+                key={i}
+                className="overflow-hidden mx-2 max-w-screen-sm bg-white shadow"
+              >
                 <div className="relative">
                   <div className="absolute top-3 right-3 py-2 px-3 text-sm rounded-lg bg-[var(--greencal-primary)] text-white"></div>
                   <div className="w-full h-[250px] lg:h-[300px] xl:h-[310px]">
@@ -42,7 +45,7 @@ const Rooms: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="px-5 py-7 relative flex xl:flex-row flex-col gap-5 xl:items-end">
+                <div className="px-5 py-7 flex xl:flex-row flex-col gap-5 xl:items-end">
                   <article className="flex-1 flex flex-col gap-3">
                     <h2 className="mb-3 whitespace-nowrap font-bold text-left text-3xl text-gray-700">
                       <StyledFonts
@@ -61,17 +64,23 @@ const Rooms: React.FC = () => {
                         />
                       </h2>
                     </span>
-                    <small className="text-gray-600 text-xs font-medium">
-                      {x.guests} guests | {x.amenities[0]}
-                    </small>
+                    <div className="w-full flex gap-5 justify-between items-center flex-col md:flex-row">
+                      <div>
+                        {" "}
+                        <small className="text-gray-600 text-xs font-medium">
+                          {x.guests} guests | {x.amenities[0]}
+                        </small>
+                      </div>
+                      <span>
+                        <Link
+                          href={"/rooms/" + x.slug}
+                          className="text-white md:whitespace-nowrap text-center flex-1 w-fit py-3 px-4 text-sm bg-[#343935]"
+                        >
+                          BOOK NOW
+                        </Link>
+                      </span>
+                    </div>
                   </article>
-
-                  <Link
-                    href={"/rooms/" + x.slug}
-                    className="text-white absolute bottom-5 right-0 md:whitespace-nowrap text-center flex-1 w-fit py-3 px-4 text-sm bg-[#343935]"
-                  >
-                    BOOK NOW
-                  </Link>
                 </div>
               </div>
             );

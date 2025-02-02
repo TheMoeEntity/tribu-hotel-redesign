@@ -53,7 +53,7 @@ const RoomSlider = () => {
                 </div>
               </div>
 
-              <div className="px-5 py-7 relative flex xl:flex-row flex-col gap-5 xl:items-end">
+              <div className="px-5 py-7 flex xl:flex-row flex-col gap-5 xl:items-end">
                 <article className="flex-1 flex flex-col gap-3">
                   <h2 className="mb-3 whitespace-nowrap font-bold text-left text-3xl text-gray-700">
                     <StyledFonts
@@ -72,17 +72,23 @@ const RoomSlider = () => {
                       />
                     </h2>
                   </span>
-                  <small className="text-gray-600 text-xs font-medium">
-                    {x.guests} guests | {x.amenities[0]}
-                  </small>
+                  <div className="w-full flex gap-5 justify-between items-center flex-col md:flex-row">
+                    <div>
+                      {" "}
+                      <small className="text-gray-600 text-xs font-medium">
+                        {x.guests} guests | {x.amenities[0]}
+                      </small>
+                    </div>
+                    <span>
+                      <Link
+                        href={"/rooms/" + x.slug}
+                        className="text-white md:whitespace-nowrap text-center flex-1 w-fit py-3 px-4 text-sm bg-[#343935]"
+                      >
+                        BOOK NOW
+                      </Link>
+                    </span>
+                  </div>
                 </article>
-
-                <Link
-                  href={"/rooms/" + x.slug}
-                  className="text-white absolute bottom-5 right-5 md:whitespace-nowrap text-center flex-1 w-fit py-3 px-4 text-sm bg-[#343935]"
-                >
-                  BOOK NOW
-                </Link>
               </div>
             </div>
           );
