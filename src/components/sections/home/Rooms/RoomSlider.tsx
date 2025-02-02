@@ -72,7 +72,7 @@ const RoomSlider = () => {
                       />
                     </h2>
                   </span>
-                  <div className="w-full flex gap-5 justify-between items-center flex-col md:flex-row">
+                  <div className="w-full flex gap-5 justify-between md:items-center flex-col md:flex-row">
                     <div>
                       {" "}
                       <small className="text-gray-600 text-xs font-medium">
