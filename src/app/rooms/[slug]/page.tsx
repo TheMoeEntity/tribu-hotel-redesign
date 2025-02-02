@@ -37,7 +37,7 @@ const SingleRoom = async ({ params }: { params: { slug: string } }) => {
             <ul className="list-disc text-gray-500 ml-5 space-y-3">
               <li>Guest fridge</li>
               <li>Large work desk</li>
-              <li>Complimentary unlimited Wi-Fi</li>
+              <li>Complimentary unlimited Wi-Fi network</li>
             </ul>
           </div>
           <ReservationForm />
