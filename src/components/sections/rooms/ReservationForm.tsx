@@ -30,8 +30,8 @@ export default function ReservationForm() {
   };
 
   return (
-    <div className="flex-1 w-full p-8 md:p-16 border-black border">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+    <div className="flex-1 w-full p-8 xl:p-16 border-black border">
+      <div className="flex flex-col mb-10 xl:flex-row justify-between items-start md:items-center">
         {" "}
         <h2 className="text-4xl font-semibold mb-6">
           <StyledFonts
@@ -151,12 +151,14 @@ export default function ReservationForm() {
           </div>
         </div>
 
-        <button
-          type="submit"
-          className="w-fit mx-auto bg-[#2A332E] text-white py-3 px-6 rounded hover:bg-[#364339] transition-colors"
-        >
-          MAKE RESERVATION
-        </button>
+        <div className="w-full flex justify-center items-center">
+          <button
+            type="submit"
+            className="w-fit mx-auto bg-[#2A332E] text-white py-3 px-6 rounded hover:bg-[#364339] transition-colors"
+          >
+            MAKE RESERVATION
+          </button>
+        </div>
       </form>
     </div>
   );

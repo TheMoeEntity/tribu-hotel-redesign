@@ -1,11 +1,12 @@
 import Hero from "@/components/shared/Hero";
 import React from "react";
 import bg from "../../../../public/images/room3.jpg";
-import ReservationForm from "@/components/sections/contact/ReservationForm";
+import ReservationForm from "@/components/sections/rooms/ReservationForm";
+import AmenitiesGrid from "@/components/sections/rooms/Amenities";
 
 const SingleRoom = () => {
   return (
-    <main className="flex flex-col pb-10 space-y-10 min-h-screen">
+    <main className="flex flex-col pb-10 space-y-7 min-h-screen">
       <Hero
         bg={bg}
         page="rooms"
@@ -13,7 +14,7 @@ const SingleRoom = () => {
         slug={true}
         caption="Tribu Deluxe"
       />
-      <section className="px-5 text-gray-600 space-y-10 py-10 container">
+      <section className="px-5 text-gray-600 space-y-10 py-5 container">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error
           beatae nisi placeat sed delectus optio nihil autem possimus ut
@@ -22,7 +23,7 @@ const SingleRoom = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
           asperiores?
         </p>
-        <div className="flex flex-col md:space-x-24 space-y-10 md:flex-row">
+        <div className="flex flex-col gap-12 xl:gap-40 md:flex-row">
           <div className="space-y-10">
             <h2 className="text-3xl text-left font-medium">Room Information</h2>
             <ul className="list-disc text-gray-500 ml-5 space-y-3">
@@ -42,6 +43,9 @@ const SingleRoom = () => {
           <ReservationForm />
         </div>
       </section>
+      <div className="px-3 lg:px-40">
+        <AmenitiesGrid />
+      </div>
     </main>
   );
 };
