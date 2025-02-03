@@ -5,7 +5,7 @@ import { toast } from "react-hot-toast";
 import { sendReservation } from "@/actions/sendReservation";
 import StyledFonts from "@/components/shared/StyledFonts";
 
-export default function ReservationForm() {
+export default function ReservationForm({ price }: { price: number }) {
   const {
     register,
     handleSubmit,
@@ -43,7 +43,7 @@ export default function ReservationForm() {
         <p className="text-3xl text-[#C4A484] mb-4">
           <StyledFonts
             fontFamily="Playfair Display"
-            text="N95,000/night"
+            text={`₦${price.toLocaleString()}/night`}
             color="inherit"
           />
         </p>

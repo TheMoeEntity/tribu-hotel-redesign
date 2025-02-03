@@ -27,12 +27,9 @@ const SingleRoom = async ({ params }: { params: { slug: string } }) => {
           <div className="space-y-10">
             <h2 className="text-3xl text-left font-medium">Room Information</h2>
             <ul className="list-disc text-gray-500 ml-5 space-y-3">
-              <li>Max: 2</li>
-              <li>A King bed</li>
-              <li>Air Conditioning</li>
-              <li>Smart TV</li>
-              <li>En Suite with Shower over bath</li>
-              <li>Tea and Coffee facilities</li>
+              {response.amenities.map((amenity) => (
+                <li key={amenity}>{amenity}</li>
+              ))}
             </ul>
             <ul className="list-disc text-gray-500 ml-5 space-y-3">
               <li>Guest fridge</li>
@@ -40,7 +37,7 @@ const SingleRoom = async ({ params }: { params: { slug: string } }) => {
               <li>Complimentary unlimited Wi-Fi network</li>
             </ul>
           </div>
-          <ReservationForm />
+          <ReservationForm price={response.price} />
         </div>
       </section>
       <div className="px-3 lg:px-40">
