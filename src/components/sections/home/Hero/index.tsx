@@ -64,18 +64,18 @@ const Hero = () => {
                 type: "spring",
               }}
             >
-              <h1 className="text-3xl font-[Playfair Display] relative md:text-5xl lg:text-6xl xl:text-9xl leading-[1.1!important] text-white font-bold">
+              <h1 className="text-3xl mt-16 md:mt-10 font-[Playfair Display] relative md:text-5xl lg:text-6xl xl:text-9xl leading-tight text-white font-bold">
                 <span className="">
                   <StyledFonts
                     fontFamily="Playfair Display"
-                    text=" YOUR HOME <br /> FROM HOME"
+                    text="IMPERIAL <br /> LUXURY"
                     color="#fff"
                   />
                 </span>
-                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <span className="absolute text-xl md:text-5xl lg:text-6xl xl:text-7xl -top-4 left-1/2 -translate-x-1/2 -translate-y-1/2">
                   <StyledFonts
                     fontFamily="Meddon"
-                    text="away"
+                    text="welcome to"
                     color="#C5A670"
                   />
                 </span>
