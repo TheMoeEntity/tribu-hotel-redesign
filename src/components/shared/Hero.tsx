@@ -25,10 +25,12 @@ const Hero: React.FC<{
     }
   }, []);
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 750);
-  }, []);
+    if (dimensions.width !== 0 && dimensions.height !== 0) {
+      setTimeout(() => {
+        setLoading(false);
+      }, 250);
+    }
+  }, [dimensions]);
 
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
